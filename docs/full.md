@@ -1,10 +1,10 @@
-# 00antigravity: Full Documentation Reference
+# Antigravity Developer Framework: Full Documentation Reference
 
 This is the master combined document for the project and should be kept in sync whenever major documentation changes.
 
 ## 1. Project Overview
 
-`00antigravity` is a disciplined Antigravity workspace that turns the project into a skill-driven developer/designer operating system. It centralizes rules in `GEMINI.md`, uses focused skills and reusable workflows from `.antigravity/`, and keeps project context in `docs/`.
+The **Antigravity Developer Framework** is a disciplined implementation system that turns your workspace into a skill-driven engineering environment. It centralizes rules in `GEMINI.md`, uses focused skills and reusable workflows from `skills/`, and keeps project context in `docs/`.
 
 ## 2. Goals
 

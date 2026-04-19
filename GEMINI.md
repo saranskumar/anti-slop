@@ -1,7 +1,7 @@
-# Project Context: 00antigravity
+# Project Context: Antigravity Developer Framework
 
 ## Overview
-AI Operating System project — a structured rules + skills + context framework for Antigravity that produces Claude-level output quality from any LLM.
+AI Developer Framework — a structured rules + skills + context configuration for Antigravity that produces production-grade output quality from any LLM.
 
 ## Current Goals
 - [x] Initial setup of rules and skills framework
@@ -701,4 +701,4 @@ The `docs/full.md` file must always provide a complete, single-source-of-truth v
 - **2026-04-19**: Implemented comprehensive `supabase-fullstack` skill with references, examples, and scripts
 - **2026-04-19**: Added Rule 21 — Design (Communication-First) global rule — 10 design principles covering communication, typography, contrast, grid, medium awareness, simplicity, and purpose-driven design
 - **2026-04-19**: Upgraded workspace architecture: added `.agent/` for runtime and `.project/` for durable memory. Added `docs/system-architecture.md` and `docs/full.md`. Implemented Rule 98 (Locality) and Rule 99 (Sync).
-- **2026-04-19**: Implemented Rule 72 (Knowledge Update Policy) and established the Framework Mental Model. Added `/workflow-knowledge-review` for intentional pattern promotion.
+- **2026-04-19**: Implemented Rule 72 (Knowledge Update Policy) and established the Framework Mental Model. Added `/workflow-knowledge-review` for intentional pattern promotion. Updated project identity to 'Antigravity Developer Framework' for public release.
