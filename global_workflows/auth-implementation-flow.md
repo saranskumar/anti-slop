@@ -1,3 +1,7 @@
+---
+description: Identity, access control, and UI implications for auth-heavy features.
+---
+
 # Workflow: Auth Implementation Flow
 
 ## Purpose

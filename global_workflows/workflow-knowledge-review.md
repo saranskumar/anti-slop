@@ -1,3 +1,7 @@
+---
+description: Guides the promotion of project-specific patterns to the global knowledge base.
+---
+
 # /workflow-knowledge-review
 
 This workflow guides the agent through the intentional promotion of project-specific knowledge into the general-purpose knowledge base.

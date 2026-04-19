@@ -1,3 +1,7 @@
+---
+description: Hardening APIs and backend services for security and reliability.
+---
+
 # Workflow: Backend API Hardening Flow
 
 ## Purpose

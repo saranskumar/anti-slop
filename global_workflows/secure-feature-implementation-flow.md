@@ -1,3 +1,7 @@
+---
+description: Implementation planning for features that cross trust boundaries or modify protected data.
+---
+
 # Workflow: Secure Feature Implementation Flow
 
 ## Purpose

@@ -1,3 +1,7 @@
+---
+description: Assessing service readiness for target environments.
+---
+
 # Workflow: Deployment Readiness Flow
 
 ## Purpose

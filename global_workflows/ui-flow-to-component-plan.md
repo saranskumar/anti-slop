@@ -1,3 +1,7 @@
+---
+description: Translating user journeys into screens, components, and state management plans.
+---
+
 # Workflow: UI Flow To Component Plan
 
 ## Purpose

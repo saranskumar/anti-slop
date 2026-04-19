@@ -1,3 +1,7 @@
+---
+description: Designing structure, UX, and packaging for local developer tools and automation CLIs.
+---
+
 # Workflow: CLI Tool Build Flow
 
 ## Purpose

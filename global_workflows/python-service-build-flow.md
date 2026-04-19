@@ -1,3 +1,7 @@
+---
+description: Designing Python package structure, APIs, workers, and operational strategy.
+---
+
 # Workflow: Python Service Build Flow
 
 ## Purpose

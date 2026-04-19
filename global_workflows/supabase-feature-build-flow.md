@@ -1,3 +1,7 @@
+---
+description: Coordinating Schema, Auth, RLS, and Edge Functions for Supabase-backed features.
+---
+
 # Workflow: Supabase Feature Build Flow
 
 ## Purpose

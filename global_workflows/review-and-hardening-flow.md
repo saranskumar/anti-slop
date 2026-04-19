@@ -1,3 +1,7 @@
+---
+description: Comprehensive system review and hardening before major releases.
+---
+
 # Workflow: Review And Hardening Flow
 
 ## Purpose

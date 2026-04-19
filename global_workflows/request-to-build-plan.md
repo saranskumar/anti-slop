@@ -1,3 +1,7 @@
+---
+description: Decomposing broad user requests into structured implementation plans.
+---
+
 # Workflow: Request To Build Plan
 
 ## Purpose

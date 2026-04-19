@@ -1,3 +1,7 @@
+---
+description: Coordinating Auth, Firestore modeling, security rules, and Functions for Firebase features.
+---
+
 # Workflow: Firebase Feature Build Flow
 
 ## Purpose
