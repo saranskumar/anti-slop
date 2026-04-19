@@ -1,69 +1,430 @@
 # 🚀 anti-slop: Antigravity Developer OS
 
-**anti-slop** is a structured, agentic AI Operating System designed specifically for the Google DeepMind Antigravity developer environment. It transforms the AI from a simple chat assistant into a disciplined, production-ready engineer and designer capable of building real software with high standards.
+**anti-slop** is a structured, agentic AI Operating System for the Google DeepMind Antigravity environment.
 
-## 🌟 The Philosophy
-- **Production-Minded:** Outputs are focused on deployable code, not ideation-heavy artifacts.
-- **Secure Defaults:** Explicit trust boundaries and security reviews are baked in.
-- **"Search-First" Discipline:** Prevents context bloat by searching codebases before reading full files.
-- **GSD Protocol:** Enforces the rigorous `SPEC → PLAN → EXECUTE → VERIFY → COMMIT` workflow.
-- **No Slop:** Adheres strictly to design systems, high-quality engineering practices, and atomic workflows.
+It transforms the AI from a basic assistant into a **disciplined software engineer + designer system** that builds real applications with:
 
-## 📂 Architecture
-
-- `skills/` (1,400+): Focused, task-specific capabilities with precise routing descriptions.
-- `GEMINI.md` / `rules/`: Always-on globally enforced guardrails for secure, maintainable engineering work.
-- `knowledge/`: Reusable engineering and design heuristics (Knowledge Items).
-- `global_workflows/`: Multi-step execution pipelines orchestrating multiple skills.
-- `docs/`: System documentation, architecture templates, and project context.
-- `templates/`: Markdown templates for scaffolding out new systems and specifications.
+* strong architecture
+* secure defaults
+* structured workflows
+* consistent design + engineering standards
 
 ---
 
-## 🛠️ How to Apply to Other Antigravity Environments
+# 🧠 Core Philosophy
 
-To supercharge your own Antigravity agent with the **anti-slop** OS, follow these steps:
+### 🔹 Production-First
 
-### 1. Global Skills & Knowledge Installation (Cross-Project)
-If you want these capabilities available across *all* your projects, copy the directories into your Antigravity global data folder.
+* No toy outputs
+* Everything is implementation-ready
 
-**Windows:**
-1. Navigate to your user's Antigravity data directory: `C:\Users\<YourUsername>\.gemini\antigravity`
-2. Copy the contents of the `skills/` folder from this repo into `C:\Users\<YourUsername>\.gemini\antigravity\skills\`
-3. Copy the contents of the `knowledge/` folder from this repo into `C:\Users\<YourUsername>\.gemini\antigravity\knowledge\`
+### 🔹 Skill-Driven Execution
 
-*(Note: On Mac/Linux, this path is typically `~/.gemini/antigravity/`)*
+* Tasks are executed using **Skills**
+* No random/unstructured responses
 
-### 2. Project-Specific Installation (Per-Workspace)
-To enforce the rules, workflows, and documentation standards on a specific project workspace:
+### 🔹 Workflow-Orchestrated
 
-1. **Copy Rules:** Copy the `GEMINI.md` file (and `.antigravity_rules` if applicable) from this repository to the root of your target project. Antigravity will automatically read this file and adopt the master instructions and global rules.
-2. **Copy Workflows:** Copy the `global_workflows/` directory to your project root to provide the agent with standardized playbooks.
-3. **Initialize Context Docs:** Copy the `docs/` folder into your project. The agent is trained via `GEMINI.md` to automatically update these files (`api-contracts.md`, `tech-stack.md`, etc.) as it works, acting as long-term project memory.
+* Complex tasks follow **Workflows**
 
-### 3. Verification
-Open your target project in your IDE with Antigravity active. Run a test prompt:
-> "Acknowledge the Master Instruction in GEMINI.md and list out your execution rules."
+### 🔹 Rules-Enforced Behavior
 
-If the agent responds with the GSD protocol and strict guidelines, the **anti-slop** Developer OS is active.
+* Defined in `GEMINI.md`
+* Always active
+
+### 🔹 Context-Aware System
+
+* Reads project docs before acting
+* Adapts to stack + architecture
 
 ---
 
-## 💻 Primary Supported Domains
-- **Frontend Applications:** React, Next.js, Vite, shadcn/ui.
-- **Backend Services:** Node.js, Express, Python APIs.
-- **Serverless & Edge:** Supabase Edge Functions, Firebase Cloud Functions.
-- **Infrastructure:** Databases, Auth, external integrations, caching strategies.
-
-## 🤝 Prompting Guide
-Once installed locally, prompt Antigravity using structured requests for maximum efficiency:
+# 📂 System Architecture
 
 ```text
-Use: [Skill Name]
+project-root/
+│
+├── GEMINI.md
+├── skills/
+├── knowledge/
+├── global_workflows/
+├── docs/
+├── templates/
+│
+├── .agent/
+├── .project/
+├── .agents/
+└── .gitignore
+```
+
+---
+
+# ⚙️ Components
+
+## 🧠 Rules (`GEMINI.md`)
+
+* Global system behavior
+* Security + design + dev rules
+* Skill & workflow usage enforcement
+
+---
+
+## 🧩 Skills (`skills/`)
+
+* Task-specific execution modules
+* Structured outputs
+* Example:
+
+  * system-architecture-designer
+  * database-schema-designer
+  * ux-flow-designer
+
+---
+
+## 🔄 Workflows (`global_workflows/`)
+
+* Multi-step pipelines
+* Use `/workflow-name` to trigger
+
+---
+
+## 📚 Knowledge (`knowledge/`)
+
+* reusable engineering/design patterns
+
+---
+
+## 📄 Docs (`docs/`)
+
+Must include:
+
+* system-architecture.md
+* full.md
+* api-contracts.md
+* tech-stack.md
+* feature-map.md
+* workflow-logic.md
+* decisions.md
+
+---
+
+## 🧠 Workspace Memory
+
+### `.agent/`
+
+* conversations
+* generated files
+* runtime state
+
+### `.project/`
+
+* decisions
+* tasks
+
+---
+
+## 🚫 Git Ignore
+
+```gitignore
+.agent/
+.agents/
+.project/
+```
+
+---
+
+# 🛠️ INSTALLATION GUIDE
+
+## 🌍 Option 1: Global Installation (All Projects)
+
+Install once → works across all Antigravity workspaces.
+
+---
+
+### 📍 Windows
+
+1. Open File Explorer
+2. Go to:
+
+```text
+C:\Users\<YourUsername>\.gemini\antigravity\
+```
+
+If it doesn't exist → create it.
+
+3. Copy:
+
+```text
+skills/ → C:\Users\<YourUsername>\.gemini\antigravity\skills\
+knowledge/ → C:\Users\<YourUsername>\.gemini\antigravity\knowledge\
+```
+
+---
+
+### 🍎 macOS
+
+Open Terminal:
+
+```bash
+mkdir -p ~/.gemini/antigravity
+```
+
+Copy:
+
+```bash
+cp -r skills ~/.gemini/antigravity/
+cp -r knowledge ~/.gemini/antigravity/
+```
+
+---
+
+### 🐧 Linux
+
+Same as macOS:
+
+```bash
+mkdir -p ~/.gemini/antigravity
+
+cp -r skills ~/.gemini/antigravity/
+cp -r knowledge ~/.gemini/antigravity/
+```
+
+---
+
+## 📁 Option 2: Project Installation (Per Workspace)
+
+Apply anti-slop to a specific project.
+
+---
+
+### Step 1: Copy core files
+
+Copy into your project root:
+
+```text
+GEMINI.md
+global_workflows/
+docs/
+```
+
+---
+
+### Step 2: Setup workspace folders
+
+```bash
+mkdir -p .agent/conversations
+mkdir -p .agent/generated
+mkdir -p .agent/state
+mkdir -p .project/decisions
+mkdir -p .project/tasks
+```
+
+---
+
+### Step 3: Add `.gitignore`
+
+```gitignore
+.agent/
+.agents/
+.project/
+```
+
+---
+
+### Step 4: Verify structure
+
+```text
+project/
+  GEMINI.md
+  skills/
+  global_workflows/
+  docs/
+  .agent/
+  .project/
+```
+
+---
+
+## ✅ Verification
+
+Open your project in Antigravity and run:
+
+```text
+Acknowledge GEMINI.md rules and list execution protocol
+```
+
+Expected:
+
+* GSD protocol
+* strict rules
+* structured execution behavior
+
+---
+
+# ⚡ How It Works
+
+```text
+User Request
+    ↓
+Read docs/
+    ↓
+Select Skills
+    ↓
+Select Workflow (if needed)
+    ↓
+Execute
+    ↓
+Update docs
+```
+
+---
+
+# 🧩 Skill Usage Guide
+
+## Automatic usage
+
+Agent:
+
+* detects intent
+* selects correct skills
+
+---
+
+## Manual hinting (optional)
+
+```text
+Use: system-architecture-designer
 
 Task:
-[Your specific task based on the SPEC]
+Design backend system
 
 Context:
-[Mention relevant docs or files]
+docs/system-architecture.md
 ```
+
+---
+
+## Skill Mapping
+
+| Task     | Skills                                  |
+| -------- | --------------------------------------- |
+| UI       | ux-flow-designer, ui-component-designer |
+| Backend  | backend-service-designer                |
+| Database | database-schema-designer                |
+| Auth     | auth-strategy-designer                  |
+| Supabase | supabase-*                              |
+| Python   | python-*                                |
+
+---
+
+# 🔄 Workflow Usage
+
+## Trigger
+
+```text
+/workflow-name
+```
+
+---
+
+## Use workflows when:
+
+* task is complex
+* repeatable
+* multi-step
+
+---
+
+# 📄 Documentation Rules
+
+After major work, update:
+
+* system-architecture.md
+* api-contracts.md
+* feature-map.md
+* workflow-logic.md
+* tech-stack.md
+* decisions.md
+* full.md
+
+---
+
+## `docs/full.md`
+
+Master doc containing:
+
+* architecture
+* features
+* APIs
+* workflows
+* decisions
+* system overview
+
+---
+
+# 🧠 Best Practices
+
+## DO
+
+* use structured prompts
+* provide context
+* follow workflows
+* trust skills
+
+---
+
+## DON'T
+
+* ask vague questions
+* bypass system
+* ignore docs
+* mix unrelated tasks
+
+---
+
+# 💡 Example Prompt
+
+```text
+Task:
+Build secure dashboard
+
+Context:
+docs/system-architecture.md
+
+Requirements:
+- Supabase auth
+- role-based access
+- responsive UI
+```
+
+---
+
+# 🚀 Supported Domains
+
+* Frontend (React, Next.js)
+* Backend (Node, Python)
+* APIs
+* Supabase / Firebase
+* UI/UX
+* automation / CLI tools
+* system architecture
+
+---
+
+# 🧠 Mental Model
+
+```text
+Rules      → behavior
+Skills     → execution
+Workflows  → orchestration
+Docs       → context
+```
+
+---
+
+# 🔥 Goal
+
+Turn AI into:
+
+> A disciplined engineer that builds real systems
+> not a chat assistant that generates random outputs
