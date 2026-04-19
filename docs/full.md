@@ -88,6 +88,7 @@ The active workflow set is implementation-oriented:
 - backend-api-hardening-flow
 - review-and-hardening-flow
 - deployment-readiness-flow
+- workflow-knowledge-review
 
 ## 8. Key Decisions
 
@@ -96,6 +97,8 @@ Important recorded decisions include:
 - using stack-aware guidance rather than one-stack-only assumptions
 - consolidating always-on rules into `GEMINI.md`
 - using workspace-local memory and runtime artifact directories
+- establishing the Knowledge Update Policy (curation over auto-writing)
+- defining the Framework Mental Model (Knowledge/Docs/Project/Agent)
 
 See `docs/decisions.md` for the decision log.
 

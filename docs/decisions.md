@@ -98,3 +98,10 @@ This file MUST be updated whenever a new architecture, library, or pattern decis
 - **Decision**: Centralized execution rules in `GEMINI.md` requiring project-aware skill selection, workflow selection when appropriate, workspace-local runtime artifact storage, and expanded documentation auto-update targets.
 - **Reason**: This makes the workspace behave like a disciplined developer/designer operating system instead of a generic assistant.
 - **Trade-offs**: More explicit process overhead, but much better consistency and traceability.
+
+### 2026-04-19 — Knowledge Update Policy (Rule 72)
+- **Problem**: Need to distinguish between general heuristics and project-specific evolution to prevent knowledge pollution.
+- **Options considered**: Auto-updating knowledge, manual-only updates, structured promotion via review workflows.
+- **Decision**: Implemented Rule 72 (Knowledge Update Policy) with curated promotion via `/workflow-knowledge-review`.
+- **Reason**: Knowledge should represent high-signal, reusable intelligence, while docs represent project state. Automatic updates to knowledge lead to low-signal "slop".
+- **Trade-offs**: Requires intentional effort to promote patterns, but ensures the `knowledge/` library remains a premium asset.
