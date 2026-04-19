@@ -1,0 +1,5 @@
+- What sign-in method is used?
+- Is the operation client-side, user-authenticated server-side, or admin/server-side?
+- Which tables map to auth.users?
+- What identity field is used in app tables?
+- Which operations require RLS vs service role?

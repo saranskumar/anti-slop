@@ -1,0 +1,7 @@
+- Use snake_case
+- Prefer migrations over manual dashboard edits
+- Add foreign keys explicitly
+- Add indexes for common filters and joins
+- Enable RLS on user-facing tables
+- Write separate policies for select/insert/update/delete
+- Prefer auth.uid()-based ownership checks
